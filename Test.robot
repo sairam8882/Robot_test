@@ -8,4 +8,4 @@ Open port find
 Example2       
   ${output}=  Run Process  netstat  -tlpn
   Log    Doing setup    console=${output}
-  Should Contain  ${output.stdout}  LISTEN
+  Should Contain  ${output}  LISTEN
