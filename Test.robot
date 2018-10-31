@@ -7,6 +7,6 @@ Open port find
 *** Test cases ***
 Example2       
   ${result}=  Run Process  nmap  -p  89
-  Should Match  ${result.stdout}  LISTEN
+  Should Match  ${result.stdout}  open
   
  
