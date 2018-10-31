@@ -6,8 +6,7 @@ Open port find
 
 *** Test cases ***
 Example2       
-  Run Process  netstat  -tlpn
-  ${message}=    Server receives binary
-    Should be contain    ${message}    binary
+  ${result}=  Run Process  netstat  -tlpn  |  grep  85
+  Should Match  ${result.stdout}  LISTEN
   
  
