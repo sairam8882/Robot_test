@@ -6,7 +6,7 @@ RUN apt install python -y
 RUN apt install python-pip -y
 RUN apt install -y apache2 
 Run apt install nginx -y
-Run apt install nmap
+RUN apt install nmap -y
 Run pip install robotframework
 Run pip install robotframework-rammbock
 Run pip install robotframework-selenium2library
