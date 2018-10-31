@@ -6,7 +6,7 @@ Open port find
 
 *** Test cases ***
 Example2       
-  ${result}=  Run Process  netstat  -tlpn  |  grep  85
+  ${result}=  Run Process  netstat  -tlpn | grep 85
   Should Match  ${result.stdout}  LISTEN
   
  
