@@ -1,5 +1,7 @@
 *** Settings ***
 Library  Process    
+*** Variables ***
+${result}=  [0]
 *** Keywords ***
 Open port find
   Run process  netstat  -tlpn  |  grep  "80"
