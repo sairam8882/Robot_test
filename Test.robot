@@ -6,6 +6,6 @@ Open port find
 
 *** Test cases ***
 Example2       
-  ${response}=  Run Process  netstat  -tlpn  |  grep 80
+  Log to console Run Process  netstat  -tlpn  |  grep 80
   
  
