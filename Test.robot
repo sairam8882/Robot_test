@@ -8,7 +8,7 @@ Open port find
 
 *** Test cases ***
 Example2       
-  ${result}=  Run Process  nmap  -p  80  localhost
+  ${result}=  Run Process  nmap  -p  89  localhost
   Should Contain  ${result.stdout}  open
   
  
