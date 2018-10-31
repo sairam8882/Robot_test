@@ -7,5 +7,5 @@ Open port find
 *** Test cases ***
 Example2       
   ${output}=  Run Process  netstat  -tlpn | grep 80
-  Log  ${output}
+  Log    Doing setup    console=${output}
   Should Contain  ${output.stdout}  LISTEN
