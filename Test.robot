@@ -6,5 +6,5 @@ Open port find
 
 *** Test cases ***
 Example2       
-  ${output}=  Run Process  netstat  -tlpn  |  grep  "80"
+  ${output}=  Run Process  netstat  -tlpn  |  grep  "89"
   Should Contain  ${output.stdout}  LISTEN
