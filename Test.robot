@@ -1,4 +1,4 @@
-*** Settings ***
+*** settings ***
 Library  Process    
 *** Variables ***
 ${result}=  [0]
