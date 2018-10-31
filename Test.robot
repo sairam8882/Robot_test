@@ -6,6 +6,8 @@ Open port find
 
 *** Test cases ***
 Example2       
-  Log to console Run Process  netstat  -tlpn  |  grep 80
+  Run Process  netstat  -tlpn
+  ${message}=    Server receives binary
+    Should be contain    ${message}    binary
   
  
